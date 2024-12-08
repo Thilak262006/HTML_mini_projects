@@ -13,13 +13,13 @@
         <nav>
             <ul>
                 <li> 
-                    <a href="/">Store hours</a>
+                    <a href="/HTML_mini_projects/project_1/">Home</a>
                 </li>
                 <li>
-                    <a href="/#about">About<abbr title="little taco shop">LTS</abbr></a>
+                    <a href="/HTML_mini_projects/project_1/#about">About<abbr title="little taco shop">LTS</abbr></a>
                 </li>
                 <li> 
-                    <a href="/#menu">our Menu</a>
+                    <a href="/HTML_mini_projects/project_1/#menu">our Menu</a>
                 </li>
                
                 <li> 
@@ -37,11 +37,42 @@
 
     <hr>
     <main>
-        <article>
-            <h2>About LTS</h2>
-        </article>
+       <h2>Our contact form</h2>
+       <section>
+       <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+            <legend>Send us message</legend>
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Your name" required>
+
+            </p >
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="Your email" required>
+            </p>
+            <p>
+                <label for="message">Your Message</label><br>
+                <textarea id="message" placeholder="type tour message here" name="message" cols="30" rows="10" >
+                </textarea>
+            </p>
+        </fieldset>
+        <button type="submit">submit</button>
+        <button type="reset">Reset</button>
+       </form>
+    </section>
+    <section>
+        <h2>Our Location</h2>
+        <address>
+            555,Taco Temptation Lane, Suite T<br>
+            kankas City,MO 55555-555
+            <br><br>
+            Phone: <a href="tel: +55555555">5555-555-55</a>
+        </address>
+    </section>
     </main>
 
+    <hr>
     <footer>
         <p>Copyright &copy; The Little Taco shop</p>
     </footer>
